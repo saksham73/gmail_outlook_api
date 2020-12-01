@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>app</title>
+    </head>
+    <body>
+        <div class="gmail">
+            <h1>For G-mail</h1>
+            <form action="/" method="POST">
+            <input type="text" id="subject">:Subject
+            <br>
+            <input type="text" id="message">:message
+            <br>
+            <input type="text" id="to">:from(yyyy.mm.dd)
+            <br>
+            <input type="text" id="from">:Day of Return(yyyy.mm.dd)
+            <br>
+            <input type="text" id="desc">:Description for calender event
+            <br>
+            <input type="text" id="sum">:Summary for calender event
+            <br>
+            <button type="button" class="button1">GO!</button>
+            <button type="button" class="button2">Get Info</button>
+            <button type="button" class="gmailCal">Set Calender event</button>
+            </form>
+            <p id="para"></p>
+        </div>
+        <div class="microsoft">
+            <h1>For Outlook</h1>
+            <form action="/" method="POST">
+            <input type="text" id="messagem">:message
+            <br>
+            <input type="text" id="tom">:from(yyyy-mm-dd)
+            <br>
+            <input type="text" id="fromm">:to(yyyy-mm-dd)
+            <br>
+            <input type="text" id="descm">:Description for calender event
+            <br>
+            <input type="text" id="summ">:Summary for calender event
+            <br>
+            <button type="button" class="button3">Always enabled</button>
+            <button type="button" class="button4">Schedule</button>
+            <button type="button" class="button5">End Vacation</button>
+            <button type="button" class="button6">Get Status</button>
+            <button type="button" class="outlookCal">Set Calender event</button>
+            <br>
+            <!--<input type="text" id="auth" size="100">:Paste copied link here
+            <br>
+            <button type="button" class="bauth">Complete Authorization</button>-->
+            </form>
+            <p id="para2"></p>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        </script>
+        <script type="text/javascript" src="{{url_for('static', filename='fapp.js')}}"></script>
+        </body>
+</html>
